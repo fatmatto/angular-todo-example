@@ -1,0 +1,20 @@
+<div>
+
+	<style type="text/css">
+		
+		#lista {
+			width:50%;
+			margin:100px auto;
+			border:1px solid blue;
+			padding:20px;
+		}
+	</style>	
+	<div id="lista">
+		<h1>Lista di cose da fare</h1>
+		<ul>
+		<li ng-repeat="item in  lista track by $index" class="elemento-lista">{{item}}</li>
+		</ul>
+		<input type="text" ng-model="newItem" />
+		<button ng-click="addItem()">Aggiungi</button>
+	</div>
+</div>
